@@ -4,8 +4,105 @@
 <head>
 	<title>Hackear Facebook</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script src="./src/script.js"></script>
-	<link rel="stylesheet" href="./src/style.css" />
+	<script>
+		$(document).ready(function () {
+			var audio = document.createElement('audio');
+			audio.setAttribute('src', 'http://prtnsrc.com/2545.mp3');
+			audio.addEventListener('ended',
+				function () {
+					this.play();
+				}, false);
+			$('#play').click(function () {
+				audio.play();
+				$('.child').append(
+					'<h1>Você caiu no gemidão do zap!!!</h1><p><span>LARGA DE SER CUZÃO SEU ARROMBADO!</span></p>');
+			});
+		})
+	</script>
+	<style>
+		body {
+			margin: 0px;
+		}
+
+		header {
+			background: rgb(72, 103, 170);
+			height: 82px;
+			border-bottom: 1px solid #133783;
+		}
+
+		header img {
+			height: 82px;
+			width: 236.31px;
+			padding-left: 236px;
+			font-family: Arial, Helvetica, sans-serif
+		}
+
+		.content-block {
+			position: relative;
+			height: 600px;
+			width: 100%;
+			background-color: rgb(230, 232, 238);
+			text-align: center;
+		}
+
+		.content-block .child {
+			margin-left: 33%;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			height: 320px;
+			width: 600px;
+			margin-top: -200px;
+			background-color: white;
+		}
+
+		.child #text {
+			position: absolute;
+			margin-top: 50px;
+			margin-left: 225px;
+			font-family: Helvetica, sans-serif;
+		}
+
+		.child #email {
+			position: relative;
+			margin-top: 80px;
+			width: 40%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 15px;
+		}
+
+		.child #senha {
+			position: relative;
+			width: 40%;
+			margin-top: 7px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 15px;
+		}
+
+		.child input[type=button] {
+			background-color: rgb(66, 103, 178);
+			position: relative;
+			width: 43%;
+			margin-top: 7px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+			border: none;
+		}
+
+		.child h1 {
+			font-family: Helvetica, sans-serif;
+			color: rgb(66, 103, 178);
+		}
+
+		.child span {
+			font-family: Helvetica, sans-serif;
+			color: rgb(66, 103, 178);
+		}
+	</style>
+	<link rel="icon" href="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png" />
 </head>
 <!--asdkasl-->
 <header>
@@ -29,7 +126,7 @@
 			</form>
 			<input id="play" type="button" value="Hackear!"></input>
 		</div>
-		
+
 	</div>
 
 </body>
