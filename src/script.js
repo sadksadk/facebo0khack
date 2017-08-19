@@ -8,9 +8,5 @@ $(document).ready(function () {
     $('#play').click(function () {
         audio.play();
          $('.child').append('<h1>Você caiu no gemidão do zap!!!</h1><p><span>LARGA DE SER CUZÃO SEU ARROMBADO!</span></p>');
-    });
-   
-    
-
-    
+    });   
 })
