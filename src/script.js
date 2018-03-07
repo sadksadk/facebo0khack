@@ -7,11 +7,6 @@ $(document).ready(function () {
         }, false);
     $('#play').click(function () {
         audio.play();
-         $('.child').append('<h1>Você caiu no gemidão do zap!!!</h1><p><span>LARGA DE SER CUZÃO SEU ARROMBADO!</span></p>');
-<<<<<<< HEAD
+         $('.child').append('<h1>Você caiu no gemidão do zap!!!</h1><p><span>LARGA DE SER CUZÃO SEU ARROMBADO!</span></p>'
     });
 })
-=======
-    });   
-})
->>>>>>> 3935bef0a9a83e832d8a18dbbd5e4e7510436747
